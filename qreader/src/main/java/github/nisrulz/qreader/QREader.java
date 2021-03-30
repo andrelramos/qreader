@@ -130,10 +130,6 @@ public class QREader {
       autoFocusEnabled = false;
     }
 
-    if (!hasCameraHardware(context)) {
-      Log.e(LOGTAG, "Does not have camera hardware!");
-      return;
-    }
     if (!checkCameraPermission(context)) {
       Log.e(LOGTAG, "Do not have camera permission!");
       return;
